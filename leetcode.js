@@ -60,17 +60,40 @@
 //  input [1,2,3]
 //  output [1,2,3,1,2,3]
 
-const a=[1,2,3]
-function double(){
-const first = a;
-const second = a;
-const res = first.concat(second)
-return res;
+// const a=[1,2,3]
+// function double(){
+// const first = a;
+// const second = a;
+// const res = first.concat(second)
+// return res;
     
-}
-double()
+// }
+// double()
 
 
 
+// You are given a non-negative floating point number rounded to two decimal places celsius, that denotes the temperature in Celsius.
+
+// You should convert Celsius into Kelvin and Fahrenheit and return it as an array ans = [kelvin, fahrenheit].
+
+// Return the array ans. Answers within 10-5 of the actual answer will be accepted.
+
+// Note that:
+
+// Kelvin = Celsius + 273.15
+// Fahrenheit = Celsius * 1.80 + 32.00
 
 
+
+var convertTemperature = function(celsius) {
+  const   KelvinTemp = celsius+273.15
+  const   FahrenheitTemp = celsius * 1.80 + 32.00
+
+  const asw=[KelvinTemp,FahrenheitTemp]
+  console.log(asw,'result');
+  
+//   return asw;
+
+};
+
+convertTemperature(120)
